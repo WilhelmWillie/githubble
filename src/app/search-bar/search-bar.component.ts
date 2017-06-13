@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
+  query : string;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  searchRepos() {
+    alert(this.query);
+
+    // TODO: Make call to GitHub API and retrieve data
+  }
 }
