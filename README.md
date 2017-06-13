@@ -2,14 +2,15 @@
 
 Introducing GitHubble, Your friendly tool for finding GitHub repositories.
 
-The goal in building this tool was to practice GitHub Flow practices (e.g. branches for new features, treating commits like pages in a book) as well as to re-acquaint myself with Angular 2. 
+The goal in building this tool was to practice GitHub Flow practices (e.g. branches for new features, atomic commits, PR as tools for review) as well as to re-acquaint myself with Angular 2 (architecture, components, services, etc). 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+For easy, simple, and beautiful styles, GitHubble uses [Bulma](http://bulma.io), a modern CSS framework built on FlexBox. In addition, this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
 ## Install and Run
 
 To install: 
-* Clone the repository by running `git clone https://github.com/WilhelmWillie/githubble` repository 
+* Clone the repository by running `git clone https://github.com/WilhelmWillie/githubble`
+* CD into the githubble directory: `cd githubble` 
 * Run `npm install`
 
 To run:
