@@ -13,4 +13,7 @@ export class SearchBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchRepos() {
+    alert(this.query);
+  }
 }
