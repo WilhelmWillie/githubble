@@ -15,5 +15,7 @@ export class SearchBarComponent implements OnInit {
 
   searchRepos() {
     alert(this.query);
+
+    // TODO: Make call to GitHub API and retrieve data
   }
 }
