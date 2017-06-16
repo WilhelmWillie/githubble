@@ -1,26 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { GithubApiService } from '../github-api.service';
+
+import { Repository } from '../repository';
 
 @Component({
   selector: 'search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })
-export class SearchBarComponent implements OnInit {
-  query : string;
+export class SearchBarComponent {
+  private query : string;
+  @Output() search : EventEmitter<Repository[]> = new EventEmitter<Repository[]>();
 
   constructor(private githubApiService : GithubApiService) { }
 
-  ngOnInit() {
-  }
-
   searchRepos() {
-    alert(this.query);
-
-    // TODO: Make call to GitHub API and retrieve data
+    // Make call to GitHub API and emit data to parent
     this.githubApiService.getRepos(this.query).subscribe((data) => {
-      console.log(data);
+      this.search.emit(data);
     });
   }
 }
