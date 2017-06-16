@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 
 import { GithubApiService } from './github-api.service';
+import { RepoListComponent } from './repo-list/repo-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    RepoListComponent
   ],
   imports: [
     BrowserModule,

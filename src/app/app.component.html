@@ -12,6 +12,8 @@
 		<div class="columns">
 			<div class="column is-8 is-offset-2">
 				<search-bar (search)="onSearch($event)"></search-bar>
+
+        <repo-list [repos]="repositories" *ngIf="repositories !== undefined"></repo-list>
 			</div>
 		</div>
 	</div>

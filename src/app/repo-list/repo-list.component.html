@@ -1,0 +1,16 @@
+<div class="repos">
+  <div class="repo card" *ngFor="let repo of repos">
+    <div class="card-content content">
+      <p class="title"><a href="{{repo.url}}" target="_blank">{{repo.name}}</a></p>
+      <p class="subtitle">{{repo.owner_login}}</p>
+
+      <p>{{repo.description}}</p>
+    </div>
+
+    <footer class="card-footer">
+      <a class="card-footer-item"><b>{{repo.stargazers_count}}</b>&nbsp;Stars</a>
+      <a class="card-footer-item"><b>{{repo.watchers_count}}</b>&nbsp;Watching</a>
+      <a class="card-footer-item"><b>{{repo.forks}}</b>&nbsp;Forks</a>
+    </footer>
+  </div>
+</div>
