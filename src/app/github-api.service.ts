@@ -35,7 +35,7 @@ function toRepo(r:any): Repository{
     url: r.html_url,
     description: r.description,
     stargazers_count: r.stargazers_count,
-    watchers_count: r.watches_count,
+    watchers_count: r.watchers_count,
     forks: r.forks
   });
 
