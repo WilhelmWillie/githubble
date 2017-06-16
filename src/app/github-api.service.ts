@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
 import { Observable } from 'rxjs';
+import 'rxjs/add/operator/map';
 
 import { Repository } from './repository';
 
@@ -22,7 +23,7 @@ export class GithubApiService {
 
 function mapRepos(response:Response): Repository[]{
   // Map data from GET request after converting it to JSON
-  return response.json().results.map(toRepo)
+  return response.json().items.map(toRepo)
 }
 
 function toRepo(r:any): Repository{
