@@ -1,7 +1,7 @@
 <div class="repos">
   <div class="repo card" *ngFor="let repo of repos">
     <div class="card-content content">
-      <p class="title">{{repo.name}}</p>
+      <p class="title"><a href="{{repo.url}}" target="_blank">{{repo.name}}</a></p>
       <p class="subtitle">{{repo.owner_login}}</p>
 
       <p>{{repo.description}}</p>
